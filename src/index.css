@@ -2,7 +2,7 @@
 
 body {
   height: 95vh;
-  margin-block: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-family: "Noto Sans", sans-serif;
 }
@@ -85,7 +85,7 @@ body {
 
 .gof:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .loading-container {
@@ -132,21 +132,80 @@ body {
     font-size: 4rem;
   }
   .relative, .input {
-    width: 100%;
+    width: 400px;
     height: 47px;
   }
   .gof {
-    width: 100%;
+    width: 400px;
+  }
+  .contentall{
+    text-align: center  ;
+    margin-inline: auto;
+    /* width:; */
+    display: flex;
+    justify-content: flex-start;
+    width: 460px;
+
   }
 }
 
-@media (max-width: 1400px) {
-  .image {
+@media (min-width: 1434px) and (max-width: 2000px) {
+  .sun {
     display: block;
-    width: 100vw;
-    height: 100vh;
   }
 }
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .relative, .input {
+    width: 500px;
+    height: 57px;
+  }
+  .gof {
+    width: 500px;
+  }
+  .contentall{
+    text-align: center  ;
+    margin-inline: auto;
+    /* width:; */
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    
+  }
+  .button{
+    width: 500px;
+  }
+  .image {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1000px;
+    top: 0;
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1;
+  }
+  
+}
+.sun {
+  display: none; /* تخفيها كإعداد افتراضي */
+}
+
+@media (min-width: 700px) and (max-width: 1399px) {
+  .sun {
+    display: block !important;
+  }
+}
+@media (min-width: 1500px) and (max-width: 2500px) {
+  .sun {
+    display: block !important;
+  }
+}
+
 
 @media (max-width: 700px) {
   .image {

@@ -128,7 +128,7 @@ function Login() {
 
             <button
               type="submit"
-              className="bg-[#1C1C1C] text-white w-[400px] items-center mt-4 rounded-[7px] h-[60px] cursor-pointer hover:bg-[#2b2b2b] shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 active:scale-95"
+              className="bg-[#1C1C1C] button text-white w-[400px] items-center mt-4 rounded-[7px] h-[60px] cursor-pointer hover:bg-[#2b2b2b] shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105 active:scale-95"
               title="Submit login form"
             >
               Next
